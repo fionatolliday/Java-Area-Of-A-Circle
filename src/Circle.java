@@ -2,17 +2,12 @@ import java.lang.Math.*;
 
 public class Circle {
 
-    double radius;
-    String colour;
+    double radius = 9;
+    String colour = "red";
 
-    public Circle(double radius, String colour){
-        this.radius = radius;
-        this.colour = colour;
-    }
 
-    public double calculateAreaOfCircle(double radius){
-        double
-
+    public double calculateAreaOfCircle(){
+        return Math.PI * (radius*radius);
     }
 
 }

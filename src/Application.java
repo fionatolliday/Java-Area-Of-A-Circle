@@ -2,10 +2,12 @@ public class Application {
 
     public static void main(String[] args){
 
-        Circle fionasCircle = new Circle(1, "red");
+        Circle fionasCircle = new Circle();
 
         System.out.println("The radius of " + "Fiona's circle " + "is " + fionasCircle.radius +
                 " and the colour is " + fionasCircle.colour + ".");
+
+        System.out.println("The area of the circle is " + fionasCircle.calculateAreaOfCircle());
     }
 
 }
