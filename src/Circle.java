@@ -1,3 +1,5 @@
+import java.lang.Math.*;
+
 public class Circle {
 
     double radius;
@@ -8,4 +10,12 @@ public class Circle {
         this.colour = colour;
     }
 
+    public double calculateAreaOfCircle(double radius){
+        double
+
+    }
+
 }
+
+
+//A=πr2

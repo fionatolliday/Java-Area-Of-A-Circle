@@ -7,6 +7,7 @@ public class Application {
         System.out.println("The radius of " + "Fiona's circle " + "is " + fionasCircle.radius +
                 " and the colour is " + fionasCircle.colour + ".");
     }
+
 }
 
 
