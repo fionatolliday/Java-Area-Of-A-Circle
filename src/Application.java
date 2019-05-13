@@ -2,23 +2,11 @@ public class Application {
 
     public static void main(String[] args){
 
-        Circle defaultCircle = new Circle();
-        defaultCircle.setRadius(1);
-        defaultCircle.setColour("red");
+        Circle circle = new Circle();
 
-        Circle changedCircle = new Circle();
-        changedCircle.setRadius(9);
-        changedCircle.setColour("red");
-
-        System.out.println("The radius of " + "the default circle " + "is " + defaultCircle.getRadius() +
-                " and the colour is " + defaultCircle.getColour() + ".");
-
-        System.out.println("The area of the default circle is " + defaultCircle.calculateAreaOfCircle());
-
-        System.out.println("The radius of " + "the new circle " + "is " + changedCircle.getRadius() +
-                " and the colour is " + changedCircle.getColour() + ".");
-
-        System.out.println("The area of the new circle is " + changedCircle.calculateAreaOfCircle());
+        circle.defaultCircle();
+        circle.circleWithNewColour();
+        circle.newCircle();
     }
 
 }
