@@ -2,12 +2,26 @@ import java.lang.Math.*;
 
 public class Circle {
 
-    double radius;
-    String colour;
 
-    public Circle(double radius, String colour){
+
+    private double radius;
+    private String colour;
+
+
+    public void setRadius(double radius) {
         this.radius = radius;
+    }
+
+    public void setColour(String colour) {
         this.colour = colour;
+    }
+
+    public double getRadius() {
+        return radius;
+    }
+
+    public String getColour() {
+        return colour;
     }
 
 
