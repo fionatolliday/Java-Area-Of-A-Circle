@@ -37,14 +37,14 @@ public class Circle {
 
     public void circleWithNewColour(){
         colour = "purple";
-        System.out.println("The default circle has a radius of " + getRadius() + " and a colour " +
+        System.out.println("This circle has a radius of " + getRadius() + " and a colour " +
                 "of " + getColour()  + "." + "The area of this circle is " + calculateAreaOfCircle(getRadius()));
     }
 
     public void newCircle(){
         colour = "green";
         radius = 9;
-        System.out.println("The default circle has a radius of " + getRadius() + " and a colour " +
+        System.out.println("This circle has a radius of " + getRadius() + " and a colour " +
                 "of " + getColour() + "." + "The area of this circle is " + calculateAreaOfCircle(getRadius()));
     }
 
