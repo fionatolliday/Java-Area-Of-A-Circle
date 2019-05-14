@@ -2,14 +2,23 @@ import java.lang.Math.*;
 
 public class Circle {
 
-
-
     private double radius;
     private String colour;
+
 
     public Circle(){
         this.radius = 1;
         this.colour = "red";
+    }
+
+    public Circle(String colour){
+        this.radius = 1;
+        this.colour = colour;
+    }
+
+    public Circle (double radius, String colour) {
+        this.radius = radius;
+        this.colour = colour;
     }
 
 
@@ -25,27 +34,9 @@ public class Circle {
     }
 
 
-    public double calculateAreaOfCircle(double radius){
+    public double calculateAreaOfCircle(){
 
         return Math.PI * (radius*radius);
-    }
-
-    public void defaultCircle(){
-        System.out.println("The default circle has a radius of " + getRadius() + " and a colour " +
-                "of " + getColour() + "." + "The area of this circle is " + calculateAreaOfCircle(getRadius()));
-    }
-
-    public void circleWithNewColour(){
-        colour = "purple";
-        System.out.println("This circle has a radius of " + getRadius() + " and a colour " +
-                "of " + getColour()  + "." + "The area of this circle is " + calculateAreaOfCircle(getRadius()));
-    }
-
-    public void newCircle(){
-        colour = "green";
-        radius = 9;
-        System.out.println("This circle has a radius of " + getRadius() + " and a colour " +
-                "of " + getColour() + "." + "The area of this circle is " + calculateAreaOfCircle(getRadius()));
     }
 
 }

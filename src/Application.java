@@ -2,11 +2,22 @@ public class Application {
 
     public static void main(String[] args){
 
-        Circle circle = new Circle();
+        Circle defaultCircle = new Circle();
+        Circle secondCircle = new Circle("purple");
+        Circle thirdCircle = new Circle(4, "green");
 
-        circle.defaultCircle();
-        circle.circleWithNewColour();
-        circle.newCircle();
+        System.out.println("The radius is :" + defaultCircle.getRadius());
+        System.out.println("The colour is: " + defaultCircle.getColour());
+        System.out.println("The area is: " + defaultCircle.calculateAreaOfCircle());
+
+        System.out.println("The radius is :" + secondCircle.getRadius());
+        System.out.println("The colour is: " + secondCircle.getColour());
+        System.out.println("The area is: " + secondCircle.calculateAreaOfCircle());
+
+        System.out.println("The radius is :" + thirdCircle.getRadius());
+        System.out.println("The colour is: " + thirdCircle.getColour());
+        System.out.println("The area is: " + thirdCircle.calculateAreaOfCircle());
+
     }
 
 }
